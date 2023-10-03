@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% if latest_plan_list %}
+    数据有了
+    <ul>
+        {% for plan in latest_plan_list %}
+            <p>数据</p>
+            <li><a href="/plan/{{ plan.id }}/">{{ plan.content }}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No plan are available.</p>
+{% endif %}
+</body>
+</html>

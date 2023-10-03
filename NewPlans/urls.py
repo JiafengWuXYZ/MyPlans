@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('list/', include('planlist.urls')),
+    path('plan/', include('planlist.urls')),
     path('manage/', admin.site.urls),
 ]
